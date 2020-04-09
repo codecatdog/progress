@@ -29,7 +29,8 @@ export default class MyProgress extends Vue {
     var w = this.getPercentage;
     this.barStyle = {
       backgroundImage: color,
-      width: w + "%"
+      width: w + "%",
+      transition: 'all 1s'
     };
   }
 
@@ -74,7 +75,8 @@ export default class MyProgress extends Vue {
     var w = this.getPercentage;
     this.barStyle = {
       backgroundImage: color,
-      width: w + "%"
+      width: w + "%",
+      transition: 'all 1s'
     };
   }
 }
@@ -90,6 +92,7 @@ export default class MyProgress extends Vue {
     margin: 8px 0;
     border-radius: 4px;
     .progress-bar {
+      width: 0%;
       height: 8px;
       border-radius: 4px;
     }
